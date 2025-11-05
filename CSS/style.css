@@ -12,7 +12,7 @@
   }
   
   body {
-    background: #F5CF73; /*maldito, n esquece que e um baguio de cadastro escolar, entao tem que fazer sentido com o ambiente escolar no sentido do design pro fernandinho ficar feliz e falar que nos somos orgulho dele -;-*/
+    background: #F5CF73;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo ao topo */
