@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal indesejada */
+    margin: 0;
+  }
+  
+  body {
+    background: #F5CF73; /*maldito, n esquece que e um baguio de cadastro escolar, entao tem que fazer sentido com o ambiente escolar no sentido do design pro fernandinho ficar feliz e falar que nos somos orgulho dele -;-*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    height: 100%;
+    padding: 20px; /* Adicionando padding para evitar que o conteúdo encoste nas bordas */
+  }
+  
+  .container {
+    background: #462C00; /*essas cores me remetem a escola, seu maldito, pense nisso*/
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.507), inset 0px 15px 500px #462C00; 
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px; /* Garantir que haja espaço abaixo do formulário */
+  }
+  
+  h2 { /*seria interessante se a gente conseguisse fazer um hover para esse h2 em branco com um underline tbm*/
+    text-align: center;
+    color: #F5CF73 /*to pensando em colocar esse bghl em branco, mas ce ve ai*/;
+    font-size: 47px;
+    margin-bottom: 20px;
+    transition: all 0.3s; 
+  }
+
+  p {
+    color: #f8f8f8; /*to tentando descobrir de onde é esse baguio*/
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+    color: rgb(92, 66, 31);/*essa cor eh boa pro txt, mas fica ruim pro bglh de selecionar imagem. oq fazer?*/ 
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+  
+  button {
+    background-color: #F5CF73;
+    color: #000000;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 8px 35px #000000;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-color: #462C00;
+    color: #ffffff;
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0px 6px 8px #F5CF73;
+  }
+  
+  .radio-group, .checkbox-group {
+    margin-bottom: 15px;
+  }
+  
+  .radio-group label, .checkbox-group label {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+  }
+  
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+  
+  small {
+    font-size: 12px;
+    color: rgba(190, 151, 99, 0.719);
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  }

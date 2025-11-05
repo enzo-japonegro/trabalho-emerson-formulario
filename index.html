@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Cadastro de Aluno</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      
+      <!-- Informações do Aluno -->
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="nascimento">Data de nascimento</label>
+      <input type="date" id="nascimento" name="nascimento" required>
+
+      <label for="serie">Série</label>
+      <select id="serie" name="serie" required>
+        <option value="">Selecione</option>
+        <option>1º ano</option>
+        <option>2º ano</option>
+        <option>3º ano</option>
+        <option>4º ano</option>
+        <option>5º ano</option>
+        <option>6º ano</option>
+        <option>7º ano</option>
+        <option>8º ano</option>
+        <option>9º ano</option>
+      </select>
+
+      <label for="turno">Turno</label>
+      <select id="turno" name="turno" required>
+        <option value="">Selecione</option>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+      </select>
+
+      <!-- Foto do Aluno -->
+      <label for="foto">Foto do Aluno</label>
+      <input type="file" id="foto" name="foto" accept="image/jpeg, image/png" required>
+      <small>Selecione uma foto em formato JPG ou PNG</small>
+
+      <!-- Sexo -->
+      <div class="radio-group">
+        <label>Sexo</label>
+        <label>
+          <input type="radio" name="sexo" value="masculino" required> Masculino
+        </label>
+        <label>
+          <input type="radio" name="sexo" value="feminino" required> Feminino
+        </label>
+        <label>
+          <input type="radio" name="sexo" value="outro" required> Outro
+        </label>
+      </div>
+
+      <!-- Atividades Extracurriculares -->
+      <div class="checkbox-group">
+        <label>Atividades Extracurriculares</label>
+        <label>
+          <input type="checkbox" name="atividade[]" value="esportes"> Esportes
+        </label>
+        <label>
+          <input type="checkbox" name="atividade[]" value="musica"> Música
+        </label>
+        <label>
+          <input type="checkbox" name="atividade[]" value="arte"> Arte
+        </label>
+        <label>
+          <input type="checkbox" name="atividade[]" value="teatro"> Teatro
+        </label>
+      </div>
+
+      <!-- Hora preferida para aulas -->
+      <label for="hora">Hora preferida para aulas</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <!-- Informações do Responsável -->
+      <label for="responsavel">Nome do responsável</label>
+      <input type="text" id="responsavel" name="responsavel" required>
+
+      <label for="parentesco">Parentesco</label>
+      <select id="parentesco" name="parentesco" required>
+        <option value="">Selecione</option>
+        <option>Pai</option>
+        <option>Mãe</option>
+        <option>Avô/Avó</option>
+        <option>Tutor legal</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="telefone">Telefone de contato</label>
+      <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(99) 99999-9999" required>
+
+      <!-- Observações -->
+      <label for="obs">Observações</label>
+      <textarea id="obs" name="obs" rows="3" placeholder="Alergias, necessidades especiais, etc."></textarea>
+
+      <!-- Origem escolar -->
+      <label for="origem">Origem escolar</label>
+      <input type="text" id="origem" name="origem" placeholder="Nome da escola anterior (se houver)">
+
+      <!-- Autorização de imagem -->
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="autorizacao_imagem" value="sim">
+          Autorizo o uso de imagem do aluno em atividades escolares
+        </label>
+      </div>
+
+      <!-- Tipo de matrícula -->
+      <label for="tipo_matricula">Tipo de matrícula</label>
+      <select id="tipo_matricula" name="tipo_matricula" required>
+        <option value="">Selecione</option>
+        <option>Nova matrícula</option>
+        <option>Renovação</option>
+        <option>Transferência</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+</body>
+</html>
