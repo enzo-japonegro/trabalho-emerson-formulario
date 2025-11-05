@@ -12,7 +12,7 @@
   }
   
   body {
-    background: #F5CF73; /*maldito, n esquece que e um baguio de cadastro escolar, entao tem que fazer sentido com o ambiente escolar no sentido do design pro fernandinho ficar feliz e falar que nos somos orgulho dele -;-*/
+    background: rgb(0, 28, 80);
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo ao topo */
@@ -21,25 +21,25 @@
   }
   
   .container {
-    background: #462C00; /*essas cores me remetem a escola, seu maldito, pense nisso*/
+    background: #ffffff; /*vai no basico doido, tema claro e que combina com tudo*/
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.507), inset 0px 15px 500px #462C00; 
+    border: rgb(48, 104, 168), 2px, solid;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     margin-bottom: 20px; /* Garantir que haja espaço abaixo do formulário */
   }
   
   h2 { /*seria interessante se a gente conseguisse fazer um hover para esse h2 em branco com um underline tbm*/
     text-align: center;
-    color: #F5CF73 /*to pensando em colocar esse bghl em branco, mas ce ve ai*/;
+    color: #000000 /*to pensando em colocar esse bghl em branco, mas ce ve ai*/;
     font-size: 47px;
     margin-bottom: 20px;
     transition: all 0.3s; 
   }
 
   p {
-    color: #f8f8f8; /*to tentando descobrir de onde é esse baguio*/
+    color: #000000; /*to tentando descobrir de onde é esse baguio*/
   }
 
   form {
@@ -51,13 +51,13 @@
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 500;
-    color: white
+    color: rgb(0, 0, 0)
   }
   
   input, select, textarea {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 16px;
     transition: border 0.3s;
