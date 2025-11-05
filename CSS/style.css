@@ -30,13 +30,18 @@
     margin-bottom: 20px; /* Garantir que haja espaço abaixo do formulário */
   }
   
-  h2 {
+  .container h2 {
     text-align: center;
     color: #462C00;
     font-size: 47px;
     margin-bottom: 20px;
-    text-decoration: underline;
     transition: all 0.3s; 
+  }
+
+  .container h2:hover {
+    transform: scale(1.1);
+    color: white;
+    text-decoration: underline;
   }
 
   p {
@@ -48,13 +53,14 @@
     flex-direction: column;
   }
   
-  label {
+  .container label {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 500;
-    color: white
+    color: white;
+    transition: all 0.3s;
   }
-  
+
   input, select, textarea {
     padding: 10px;
     margin-bottom: 15px;
