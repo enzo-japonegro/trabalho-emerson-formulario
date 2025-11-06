@@ -10,7 +10,7 @@
 <body>
 
   <div class="container">
-    <h2>Cadastro de Aluno</h2>
+    <h2>CADASTRO DE ALUNO</h2>
     <form action="#" method="post" enctype="multipart/form-data">
       
       <!-- Informações do Aluno -->
@@ -47,12 +47,20 @@
 
       <!-- Foto do Aluno -->
       <label for="foto">Foto do Aluno</label>
-      <input type="file" id="foto" name="foto" accept="image/jpeg, image/png" required>
       <small>Selecione uma foto em formato JPG ou PNG</small>
+      <input type="file" id="foto" name="foto" accept="image/jpeg, image/png" required>
+      
+      <!-- Autorização de imagem -->
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="autorizacao_imagem" value="sim">
+          Autorizo o uso de imagem do aluno em atividades escolares
+        </label>
+      </div>
 
       <!-- Sexo -->
       <div class="radio-group">
-        <label>Sexo</label>
+        <label style="font-size: 22px;">Sexo:</label>
         <label>
           <input type="radio" name="sexo" value="masculino" required> Masculino
         </label>
@@ -66,7 +74,7 @@
 
       <!-- Atividades Extracurriculares -->
       <div class="checkbox-group">
-        <label>Atividades Extracurriculares</label>
+        <label style="font-size: 22px;">Atividades Extracurriculares:</label>
         <label>
           <input type="checkbox" name="atividade[]" value="esportes"> Esportes
         </label>
@@ -110,17 +118,9 @@
       <label for="origem">Origem escolar</label>
       <input type="text" id="origem" name="origem" placeholder="Nome da escola anterior (se houver)">
 
-      <!-- Autorização de imagem -->
-      <div class="checkbox-group">
-        <label>
-          <input type="checkbox" name="autorizacao_imagem" value="sim">
-          Autorizo o uso de imagem do aluno em atividades escolares
-        </label>
-      </div>
-
       <!-- Tipo de matrícula -->
       <label for="tipo_matricula">Tipo de matrícula</label>
-      <select id="tipo_matricula" name="tipo_matricula" required>
+      <select id="tipo_matricula" name="tipo_matricula" placeholder="Selecione" required>
         <option value="">Selecione</option>
         <option>Nova matrícula</option>
         <option>Renovação</option>

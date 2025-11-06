@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    cursor: url(../IMG/comum.png), auto; /*Mouse bunitin, ainda não consigo mudar dentro dos negocio de multipla escolha*/
   }
   
   html, body {
@@ -11,54 +12,59 @@
     margin: 0;
   }
   
+/*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
+/*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
+/*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
+/*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
+/*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
+
   body {
-    background: linear-gradient( to bottom right, whitesmoke, rgb(110, 110, 110));
+    background: linear-gradient( to bottom right, rgb(248, 212, 170), rgb(248, 169, 145)); /*To usando essas cores pq elas são mais convidativas, faz sentido a uma escola*/
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo ao topo */
     height: 100%;
     padding: 20px; /* Adicionando padding para evitar que o conteúdo encoste nas bordas */
+    
   }
   
   .container {
-    background: #1377fa;
+    background: radial-gradient(whitesmoke, rgba(245, 245, 245, 0.952), rgba(245, 245, 245, 0.644));/*dá um efeitin de transparencia nas bordas*/
     padding: 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
     margin-bottom: 20px; /* Garantir que haja espaço abaixo do formulário */
   }
   
   .container h2 {
     text-align: center;
-    color: #000000 /*to pensando em colocar esse bghl em branco, mas ce ve ai*/;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 47px;
     margin-bottom: 20px;
-    transition: all 0.3s; 
   }
 
-  .container h2:hover {
-    transform: scale(1.1);
-    color: white;
-    text-decoration: underline;
+  .container #foto {
+    background: whitesmoke;
   }
 
   p {
-    color: #000000; /*to tentando descobrir de onde é esse baguio*/
+    color: #000000;
   }
 
   form {
     display: flex;
     flex-direction: column;
+    cursor: url(../IMG/comum.png), auto; /*Mouse bunitin, ainda não consigo mudar dentro dos negocio de multipla escolha*/
   }
-  
   .container label {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 500;
     color: rgb(0, 0, 0)
   }
-
+  
   input, select, textarea {
     padding: 10px;
     margin-bottom: 15px;
@@ -67,18 +73,27 @@
     font-size: 16px;
     transition: border 0.3s;
     color: #462C00; 
+    transition: all 0.2s ease;
+    cursor: url(../IMG/hand-pointer.png), auto; /*Mouse bunitin, ainda não consigo mudar dentro dos negocio de multipla escolha*/
   }
-  
+
   input:focus, select:focus, textarea:focus {
-    border-color: #ffffff;
+    border-color: #ff6600;
     outline: none;
+    transform: scale(1.05);
   }
-  
+
+  input:hover, select:hover, textarea:hover {
+    border-color: #ff6600;
+    outline: none;
+    transform: scale(1.05);
+  }
+
   button {
-    background-color: #ffffff00;
-    color: #ffffff;
+    background-color: #ff510028;
+    color: #353535;
     padding: 12px;
-    border: whitesmoke 2px solid;
+    border: rgb(36, 36, 36) 2px solid;
     border-radius: 5px;
     font-size: 24px;
     cursor: pointer;
@@ -86,9 +101,10 @@
   }
   
   button:hover {
-    background-color: #ffffff;
+    background-color: #f58d2dc7;
     color: #000000;
     transform: translateY(-5px) scale(1.08);
+    cursor: url(../IMG/hand-pointer.png), auto; /*Mouse bunitin, ainda não consigo mudar dentro dos negocio de multipla escolha*/
   }
   
   .radio-group, .checkbox-group {
@@ -98,7 +114,7 @@
   .radio-group label, .checkbox-group label {
     display: inline-block;
     margin-right: 20px;
-    color: #ffffff;
+    color: #000000;
   }
   
   .checkbox-group input {
@@ -106,8 +122,8 @@
   }
   
   small {
-    font-size: 12px;
-    color: rgba(243, 186, 111, 0.719);
+    font-size: 15px;
+    color: rgb(255, 180, 82);
   }
   
   @media (max-width: 600px) {
