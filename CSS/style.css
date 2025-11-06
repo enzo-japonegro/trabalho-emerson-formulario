@@ -19,7 +19,7 @@
 /*ITALO DEIXA TODOS OS TEXTOS DA COR QUE ESTÂO, E NÃO COLOCA HOVER EM NENHUM DELES BELE?*/
 
   body {
-    background: linear-gradient( to bottom right, rgb(248, 212, 170), rgb(248, 169, 145)); /*To usando essas cores pq elas são mais convidativas, faz sentido a uma escola*/
+    background: linear-gradient( to bottom right, rgb(253, 194, 127), rgb(245, 115, 75)); /*To usando essas cores pq elas são mais convidativas, faz sentido a uma escola*/
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Alinha o conteúdo ao topo */
@@ -90,10 +90,10 @@
   }
 
   button {
-    background: radial-gradient(circle, #ff5100b2, #ff5100bb, #ff5100af, #ff510000);
+    background: transparent;
     color: #292929;
     padding: 12px;
-    border: none;
+    border: rgb(252, 159, 106) 2px solid;
     border-radius: 5px;
     font-size: 24px;
     cursor: pointer;
@@ -101,7 +101,7 @@
   }
   
   button:hover {
-    background-color: #f58d2dc7;
+    background-color: #ff7d26c7;
     color: #000000;
     transform: translateY(-5px) scale(1.08);
     cursor: url(../IMG/hand-pointer.png), auto; /*Mouse bunitin, ainda não consigo mudar dentro dos negocio de multipla escolha*/
