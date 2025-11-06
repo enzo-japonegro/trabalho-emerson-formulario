@@ -33,7 +33,7 @@
     padding: 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 600px;
+    max-width: 675px;
     margin-bottom: 20px; /* Garantir que haja espaço abaixo do formulário */
   }
   
@@ -41,7 +41,7 @@
     text-align: center;
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 47px;
+    font-size: 55px;
     margin-bottom: 20px;
   }
 
@@ -109,6 +109,7 @@
   
   .radio-group, .checkbox-group {
     margin-bottom: 15px;
+    border-bottom: #4141416b 1px solid;
   }
   
   .radio-group label, .checkbox-group label {
@@ -116,9 +117,23 @@
     margin-right: 20px;
     color: #000000;
   }
-  
+
+  .radio-group input {
+    margin-right: 5px;
+    transition: all 0.1s ease;
+  }
+
+  .radio-group input:hover {
+    transform: scale(1.3);
+  }
+
   .checkbox-group input {
     margin-right: 5px;
+    transition: all 0.1s ease;
+  }
+
+  .checkbox-group input:hover {
+    transform: scale(1.3);
   }
   
   small {
